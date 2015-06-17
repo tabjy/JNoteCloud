@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="437.0" maxWidth="680.0" minHeight="160.0" minWidth="680.0" prefHeight="253.0" prefWidth="680.0" styleClass="background" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabjy.jnote.view.ValidNewUserController">
+   <children>
+      <Label layoutX="52.0" layoutY="21.0" prefHeight="36.0" prefWidth="649.0" styleClass="AlertTitle" text="Only one more step" />
+      <Label layoutX="13.0" layoutY="59.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="You are almost ready to go. We are currently validating and creating your account. This will only take" />
+      <HBox layoutX="399.0" layoutY="178.0" spacing="10.0" />
+      <Label layoutX="13.0" layoutY="80.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="few seconds." />
+      <Button fx:id="continueBtn" defaultButton="true" layoutX="549.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleContinue" styleClass="AlertButton" text="Let's Start">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="hintLabel" layoutX="12.0" layoutY="154.0" prefHeight="44.0" prefWidth="639.0" style="-fx-font-weight: bold;" styleClass="AlertContent" />
+      <ImageView fitHeight="35.0" fitWidth="58.0" layoutX="12.0" layoutY="21.0" onMouseClicked="#handleBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../res/img/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="uidLabel" alignment="CENTER" layoutX="16.0" layoutY="108.0" prefHeight="36.0" prefWidth="649.0" styleClass="AlertTitle" text="Please Wait..." textAlignment="CENTER" />
+      <Hyperlink alignment="CENTER_RIGHT" layoutX="412.0" layoutY="193.0" opacity="0.0" prefHeight="0.0" prefWidth="0.0" underline="true">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Hyperlink>
+      <Hyperlink fx:id="hyperLink" disable="true" layoutX="412.0" layoutY="221.0" onAction="#copyClipboard" text="Copy UID to clipboard" underline="true" />
+   </children>
+</AnchorPane>

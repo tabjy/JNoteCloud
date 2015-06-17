@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="160.0" minWidth="547.0" prefHeight="602.0" prefWidth="547.0" style="-fx-background-color: white;" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabjy.jnote.view.AppearanceController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="193.0" style="-fx-text-fill: black;" styleClass="AlertTitle" text="Appearance" />
+      <Label layoutX="13.0" layoutY="59.0" prefHeight="24.0" prefWidth="655.0" style="-fx-text-fill: black;" styleClass="AlertContent" text="Plase choose your favorite color theme." />
+      <HBox layoutX="399.0" layoutY="178.0" spacing="10.0" />
+      <Label fx:id="hint" layoutX="14.0" layoutY="225.0" prefHeight="24.0" prefWidth="497.0" style="-fx-text-fill: black;" styleClass="AlertContent" />
+      <HBox layoutX="69.0" layoutY="118.0" spacing="10.0">
+         <children>
+            <Button fx:id="purple" layoutX="56.0" layoutY="120.0" mnemonicParsing="false" onAction="#handlePurple" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #881798; -fx-border-color: #4617b4;" styleClass="colorBtn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="red" mnemonicParsing="false" onAction="#handleRed" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e81123; -fx-border-color: #4617b4;" styleClass="colorBtn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="blue" mnemonicParsing="false" onAction="#handleBlue" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #0078d7; -fx-border-color: #4617b4;" styleClass="colorBtn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="green" mnemonicParsing="false" onAction="#handleGreen" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #10893e; -fx-border-color: #4617b4;" styleClass="colorBtn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="pink" mnemonicParsing="false" onAction="#handlePink" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #e3008c; -fx-border-color: #4617b4;" styleClass="colorBtn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="yellow" mnemonicParsing="false" onAction="#handleYellow" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #ff8c00; -fx-border-color: #4617b4;" styleClass="colorBtn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

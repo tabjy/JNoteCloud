@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabjy.jnote.view.OverviewController">
+   <children>
+      <Pane prefHeight="768.0" prefWidth="275.0" styleClass="sideBar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="206.0" prefWidth="275.0">
+               <children>
+                  <Label id="programName" layoutX="70.0" layoutY="31.0" styleClass="whiteText" text="JNote Cloud" />
+                  <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../../../../../res/img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutY="84.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="syncAll" layoutY="84.0" mnemonicParsing="false" onAction="#syncAll" prefHeight="38.0" prefWidth="132.0" styleClass="globleButton" text="Sync All">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="deleteAll" layoutX="138.0" layoutY="84.0" mnemonicParsing="false" onAction="#deleteAll" prefHeight="38.0" prefWidth="132.0" styleClass="globleButton" text="Delete All">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="31.0" layoutY="148.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../res/img/note.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="listTitle" layoutX="72.0" layoutY="165.0" opacity="0.7" styleClass="whiteText" text="All Notes" />
+                  <Button id="addNoteBtn" layoutX="207.0" layoutY="131.0" mnemonicParsing="false" onAction="#newNote" text="+">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label layoutX="164.0" layoutY="19.0" text="v1.0rc" textAlignment="JUSTIFY" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="275.0" prefHeight="65.0" prefWidth="1091.0" styleClass="background" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="noteTitle" layoutY="4.0" onKeyReleased="#saveChange" styleClass="whiteText" />
+         </children>
+      </Pane>
+      <Pane layoutX="540.0" layoutY="343.0" prefHeight="133.0" prefWidth="275.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Pane layoutX="16.0" layoutY="-8.0" prefHeight="1.0" prefWidth="243.0" style="-fx-background-color: white;" />
+            <VBox prefHeight="130.0" prefWidth="275.0">
+               <children>
+                  <Button fx:id="setting" layoutX="60.0" layoutY="629.0" mnemonicParsing="false" onAction="#showSettingWindow" prefHeight="40.0" prefWidth="275.0" styleClass="globleMenuButton" text="Settings  ">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="about" layoutX="60.0" layoutY="670.0" mnemonicParsing="false" onAction="#showAbout" prefHeight="40.0" prefWidth="275.0" styleClass="globleMenuButton" text="About     ">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="feedback" layoutX="60.0" layoutY="709.0" mnemonicParsing="false" onAction="#showFeedback" prefHeight="40.0" prefWidth="275.0" styleClass="globleMenuButton" text="Feedback">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </VBox>
+            <VBox layoutX="45.0" layoutY="7.0" mouseTransparent="true" prefHeight="109.0" prefWidth="15.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="41.0" layoutY="637.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../res/img/settings.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="41.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../res/img/about.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="41.0" layoutY="716.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../res/img/Feedback.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <HBox layoutX="1142.0" layoutY="70.0" prefHeight="64.0" prefWidth="255.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="838.0" layoutY="-2.0" prefHeight="64.0" prefWidth="243.0">
+               <children>
+                  <Label fx:id="noteStatus" alignment="CENTER_RIGHT" layoutX="463.0" layoutY="-2.0" prefHeight="15.0" prefWidth="620.0">
+                     <styleClass>
+                        <String fx:value="whiteText" />
+                        <String fx:value="noteInfo" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="noteTime" alignment="CENTER_RIGHT" layoutX="461.0" layoutY="24.0" prefHeight="15.0" prefWidth="620.0">
+                     <styleClass>
+                        <String fx:value="whiteText" />
+                        <String fx:value="noteInfo" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Pane layoutX="602.0" layoutY="178.0" prefHeight="20.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label id="statusBar" fx:id="statusInfo" layoutX="6.0" layoutY="1.0" styleClass="whiteText" />
+         </children></Pane>
+      <Label id="lastSynced" fx:id="modifiedLabel" layoutX="1130.0" layoutY="41.0" styleClass="whiteText" AnchorPane.rightAnchor="250.0" />
+      <Pane layoutX="275.0" layoutY="65.0" prefHeight="40.0" prefWidth="1091.0" styleClass="toolBar" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+         <children>
+            <HBox layoutX="10.0" layoutY="3.0" prefHeight="40.0" prefWidth="495.0" spacing="24.5" styleClass="toolBarBtn">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="39.0" onMouseClicked="#handleStrong" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../../../../res/img/bold.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" onMouseClicked="#handleItalic" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../../../../res/img/italic.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handleQuote" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../../../../res/img/quote.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="39.0" onMouseClicked="#handleCode" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../../../../res/img/code.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="35.0" onMouseClicked="#handleImage" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../../../../res/img/image.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="42.0" onMouseClicked="#handleLink" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../../../../res/img/link.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="35.0" onMouseClicked="#handleHeading" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../../../../res/img/heading.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="34.0" onMouseClicked="#handleMore" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../../../../../res/img/more.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <HBox layoutX="1079.0" layoutY="110.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="64.0">
+         <children>
+            <Button fx:id="delete" layoutX="851.0" layoutY="6.0" mnemonicParsing="false" onAction="#deleteNote" prefHeight="40.0" prefWidth="120.0" styleClass="globleMenuButton" text="        Delete">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="sync" layoutX="971.0" mnemonicParsing="false" onAction="#syncNote" prefHeight="40.0" prefWidth="120.0" styleClass="globleMenuButton" text="           Sync">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </HBox>
+      <HBox layoutX="1154.0" layoutY="93.0" mouseTransparent="true" spacing="90.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="65.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="631.0" onMouseClicked="#deleteNote" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../res/img/delete.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="698.0" onMouseClicked="#syncNote" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../res/img/sync.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </HBox>
+      <Label id="statusBar" fx:id="connectionStatus" layoutX="1132.0" layoutY="747.0" styleClass="whiteText" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="5.0" />
+      <SplitPane fx:id="splitPane" dividerPositions="0.5013774104683195" layoutX="275.0" layoutY="105.0" prefHeight="643.0" prefWidth="486.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="105.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextArea fx:id="markdown" layoutX="34.0" layoutY="14.0" onKeyReleased="#saveChange" prefHeight="641.0" prefWidth="543.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <styleClass>
+                        <String fx:value="customScrollBar" />
+                        <String fx:value="noGlow" />
+                     </styleClass></TextArea>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <WebView fx:id="webView" layoutX="102.0" layoutY="71.0" prefHeight="641.0" prefWidth="539.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <styleClass>
+                        <String fx:value="customScrollBar" />
+                        <String fx:value="noGlow" />
+                     </styleClass></WebView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <AnchorPane id="noteListContainer" fx:id="noteListContainer" prefHeight="200.0" prefWidth="275.0" styleClass="sideBar" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="160.0" minWidth="547.0" prefHeight="602.0" prefWidth="547.0" style="-fx-background-color: white;" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabjy.jnote.view.MiscController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" style="-fx-text-fill: black;" styleClass="AlertTitle" text="Misc" />
+      <HBox layoutX="399.0" layoutY="178.0" spacing="10.0" />
+      <Label layoutX="13.0" layoutY="111.0" prefHeight="24.0" prefWidth="655.0" style="-fx-text-fill: black;" styleClass="AlertContent" text="Remember to include port number .Use jnote.tabjy.com by default." />
+      <Label layoutX="13.0" layoutY="87.0" prefHeight="24.0" prefWidth="655.0" style="-fx-font-weight: bold; -fx-text-fill: black; -fx-font-size: 14;" styleClass="AlertContent" text="Service Host:" />
+      <Label fx:id="hint" layoutX="13.0" layoutY="154.0" prefHeight="24.0" prefWidth="497.0" style="-fx-text-fill: black;" styleClass="AlertContent" text="Your UID has been cleared." />
+      <TextField fx:id="host" layoutX="122.0" layoutY="87.0" onKeyReleased="#handleChanged" prefHeight="25.0" prefWidth="347.0" style="-fx-border-radius: 0;" styleClass="customScrollBar" />
+   </children>
+</AnchorPane>

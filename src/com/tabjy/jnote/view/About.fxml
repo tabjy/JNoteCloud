@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="649.0" maxWidth="680.0" minHeight="160.0" minWidth="653.0" prefHeight="561.0" prefWidth="653.0" styleClass="background" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabjy.jnote.view.WizardController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="649.0" styleClass="AlertTitle" text="About JNote Cloud" />
+      <HBox layoutX="399.0" layoutY="178.0" spacing="10.0" />
+      <Label layoutX="13.0" layoutY="91.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="Copyright 2015 Tabjy" />
+      <Label layoutX="13.0" layoutY="65.0" prefHeight="24.0" prefWidth="655.0" style="-fx-font-weight: bold; -fx-font-size: 14;" styleClass="AlertContent" text="JNote Cloud v1.0rc" />
+      <Label layoutX="13.0" layoutY="108.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);" />
+      <Label layoutX="13.0" layoutY="125.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="you may not use this file except in compliance with the License." />
+      <Label layoutX="13.0" layoutY="144.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0" />
+      <Label layoutX="14.0" layoutY="194.0" prefHeight="24.0" prefWidth="633.0" styleClass="AlertContent" text="By using JNote Cloud, you understand JNote comes with ABSOLUTELY NO WARRANTY." />
+      <Label layoutX="14.0" layoutY="210.0" prefHeight="24.0" prefWidth="633.0" styleClass="AlertContent" text="As a free service provider, we cannot ensure your data's integrity, pravicy and security." />
+      <Label layoutX="14.0" layoutY="226.0" prefHeight="24.0" prefWidth="633.0" styleClass="AlertContent" text="All your data is stored in our database with absolutely no encryption." />
+      <Label layoutX="14.0" layoutY="261.0" prefHeight="24.0" prefWidth="633.0" styleClass="AlertContent" text="You agree not to use this service to store any of the followings:" />
+      <Label layoutX="35.0" layoutY="277.0" prefHeight="24.0" prefWidth="633.0" styleClass="AlertContent" text="Your password, credit card number, token, etc." />
+      <Label layoutX="35.0" layoutY="293.0" prefHeight="24.0" prefWidth="633.0" styleClass="AlertContent" text="Your personal information." />
+      <Label layoutX="35.0" layoutY="308.0" prefHeight="24.0" prefWidth="633.0" styleClass="AlertContent" text="Anything you don't want others to know" />
+      <Label layoutX="35.0" layoutY="324.0" prefHeight="24.0" prefWidth="633.0" styleClass="AlertContent" text="Anything that against laws of Canada, The U.S., and China." />
+      <Label layoutX="14.0" layoutY="360.0" prefHeight="24.0" prefWidth="633.0" styleClass="AlertContent" text="Hope you enjoy using JNote Cloud. For more information, visit our website http://jnote.tabjy.com." />
+      <Label layoutX="13.0" layoutY="402.0" prefHeight="24.0" prefWidth="655.0" style="-fx-font-weight: bold; -fx-font-size: 14;" styleClass="AlertContent" text="3rd Party Libraries" />
+      <Label layoutX="13.0" layoutY="481.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="-JSON-java https://github.com/douglascrockford/JSON-java" />
+      <Label layoutX="72.0" layoutY="459.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="-lisence: New BSD Licensehttp://opensource.org/licenses/BSD-3-Clause" />
+      <Label layoutX="72.0" layoutY="442.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="-an open-source java extensible markdown processor." />
+      <Label layoutX="13.0" layoutY="426.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="-markdown4j https://code.google.com/p/markdown4j/" />
+      <Label layoutX="72.0" layoutY="500.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="-The files in this package implement JSON encoders/decoders in Java." />
+      <Label layoutX="72.0" layoutY="519.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="-lisence: The JSON Licensehttp://www.json.org/license.html" />
+   </children>
+</AnchorPane>

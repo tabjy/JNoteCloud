@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="160.0" maxWidth="680.0" minHeight="160.0" minWidth="680.0" prefHeight="160.0" prefWidth="680.0" styleClass="background" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabjy.jnote.view.AlertWindowController">
+   <children>
+      <Label fx:id="title" layoutX="14.0" layoutY="14.0" styleClass="AlertTitle" text="Alert Title" />
+      <Label fx:id="content" layoutX="14.0" layoutY="62.0" styleClass="AlertContent" text="Alert Content" />
+      <HBox layoutX="489.0" layoutY="111.0" spacing="10.0">
+         <children>
+            <Button defaultButton="true" layoutX="489.0" layoutY="111.0" mnemonicParsing="false" onAction="#handleQuit" prefWidth="85.0" styleClass="AlertButton" text="Quit" />
+            <Button defaultButton="true" layoutX="581.0" layoutY="111.0" mnemonicParsing="false" onAction="#handleOK" prefWidth="85.0" styleClass="AlertButton" text="OK" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

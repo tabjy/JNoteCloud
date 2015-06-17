@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabjy.jnote.view.SettingController">
+   <children>
+      <Pane prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #e6e6e6;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="52.0" layoutY="6.0" prefHeight="32.0" prefWidth="360.0" style="-fx-text-fill: black; -fx-font-size: 24;" text="Setting" />
+         </children>
+      </Pane>
+      <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="39.0" style="-fx-border-color: none;" styleClass="background" />
+      <Pane layoutY="80.0" prefHeight="200.0" prefWidth="320.0" style="-fx-background-color: #f2f2f2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <Button fx:id="setting" mnemonicParsing="false" onAction="#loadAccountPane" prefHeight="40.0" prefWidth="320.0" text="Account">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="globleMenuButton" />
+                  <String fx:value="settingBtn" />
+               </styleClass>
+            </Button>
+            <Button fx:id="setting1" layoutY="40.0" mnemonicParsing="false" onAction="#loadAppearancePane" prefHeight="40.0" prefWidth="320.0" text="Appearance">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="globleMenuButton" />
+                  <String fx:value="settingBtn" />
+               </styleClass>
+            </Button>
+            <Button fx:id="setting2" layoutY="80.0" mnemonicParsing="false" onAction="#loadMiscPane" prefHeight="40.0" prefWidth="320.0" text="Misc">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="globleMenuButton" />
+                  <String fx:value="settingBtn" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+      <BorderPane fx:id="container" layoutX="320.0" layoutY="80.0" prefHeight="536.0" prefWidth="588.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0" />
+   </children>
+</AnchorPane>

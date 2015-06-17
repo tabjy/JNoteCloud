@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="437.0" maxWidth="680.0" minHeight="160.0" minWidth="680.0" prefHeight="233.0" prefWidth="680.0" styleClass="background" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabjy.jnote.view.ExistingUserController">
+   <children>
+      <Label layoutX="52.0" layoutY="21.0" prefHeight="36.0" prefWidth="649.0" styleClass="AlertTitle" text="I have a existing UID" />
+      <Label layoutX="13.0" layoutY="57.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="Please enter your UID below. All your notes will be automatically download from our server." />
+      <HBox layoutX="399.0" layoutY="178.0" spacing="10.0" />
+      <Label fx:id="hint" layoutX="13.0" layoutY="128.0" prefHeight="24.0" prefWidth="655.0" style="-fx-font-weight: bold; -fx-font-size: 14;" styleClass="AlertContent" text="This will take a few seconds to verify your UID. Please sit back and relax." />
+      <Button fx:id="continueBtn" defaultButton="true" layoutX="554.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleContinue" styleClass="AlertButton" text="Continue">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="uidField" layoutX="63.0" layoutY="91.0" onKeyReleased="#uidChanged" prefHeight="25.0" prefWidth="372.0" style="-fx-border-radius: 0;" styleClass="customScrollBar" />
+      <Label layoutX="12.0" layoutY="94.0" prefHeight="24.0" prefWidth="35.0" style="-fx-font-weight: bold; -fx-font-size: 14;" styleClass="AlertContent" text="UID:" />
+      <ImageView fitHeight="35.0" fitWidth="58.0" layoutX="12.0" layoutY="21.0" onMouseClicked="#handleBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../res/img/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Hyperlink layoutX="448.0" layoutY="198.0" onAction="#handleForgot" text="I forgot my UID" underline="true" />
+   </children>
+</AnchorPane>

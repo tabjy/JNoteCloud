@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="437.0" maxWidth="680.0" minHeight="160.0" minWidth="680.0" prefHeight="437.0" prefWidth="680.0" styleClass="background" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabjy.jnote.view.NewUserController">
+   <children>
+      <Label layoutX="52.0" layoutY="21.0" prefHeight="36.0" prefWidth="649.0" styleClass="AlertTitle" text="Generate your unique UID" />
+      <Label layoutX="13.0" layoutY="59.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="You will have your own unique User ID. Please remember UID is your only identification that gives" />
+      <HBox layoutX="399.0" layoutY="178.0" spacing="10.0" />
+      <Label layoutX="13.0" layoutY="80.0" prefHeight="24.0" prefWidth="655.0" styleClass="AlertContent" text="you accese to your notes. Keep it in a safe place." />
+      <Label layoutX="13.0" layoutY="107.0" prefHeight="24.0" prefWidth="655.0" style="-fx-font-weight: bold; -fx-font-size: 14;" styleClass="AlertContent" text="Please generate some randomness by moving the mouse over the blank area below." />
+      <Button fx:id="continueBtn" defaultButton="true" layoutX="554.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleContinue" styleClass="AlertButton" text="Continue">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="emailField" layoutX="63.0" layoutY="331.0" prefHeight="25.0" prefWidth="347.0" style="-fx-border-radius: 0;" styleClass="customScrollBar" />
+      <Label layoutX="14.0" layoutY="334.0" prefHeight="24.0" prefWidth="58.0" style="-fx-font-weight: bold; -fx-font-size: 14;" styleClass="AlertContent" text="Email:" />
+      <Label layoutX="419.0" layoutY="335.0" prefHeight="24.0" prefWidth="72.0" styleClass="AlertContent" text="(Optional)" />
+      <Label layoutX="63.0" layoutY="358.0" prefHeight="24.0" prefWidth="454.0" styleClass="AlertContent" text="Just in case you forgot your UID. We can send your UID to this email." />
+      <AnchorPane fx:id="mousePane" layoutX="15.0" layoutY="133.0" prefHeight="150.0" prefWidth="650.0" style="-fx-background-color: #e5e5e5;">
+         <children>
+            <Label fx:id="hint" alignment="CENTER" layoutX="13.0" layoutY="68.0" prefHeight="15.0" prefWidth="625.0" text="Move you mouse randomly here">
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor></Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor></AnchorPane>
+      <Label layoutX="512.0" layoutY="293.0" prefHeight="24.0" prefWidth="72.0" style="-fx-font-weight: bold; -fx-font-size: 14;" styleClass="AlertContent" text="Progress:" />
+      <Label fx:id="progress" alignment="CENTER_RIGHT" layoutX="591.0" layoutY="284.0" prefHeight="36.0" prefWidth="48.0" styleClass="AlertTitle" text="0" />
+      <Label alignment="CENTER_RIGHT" layoutX="591.0" layoutY="284.0" prefHeight="36.0" prefWidth="72.0" styleClass="AlertTitle" text="\%" />
+      <ImageView fitHeight="35.0" fitWidth="58.0" layoutX="12.0" layoutY="21.0" onMouseClicked="#handleBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../res/img/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
