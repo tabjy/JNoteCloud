@@ -7,6 +7,7 @@ Usage:
 - Make sure you have JDK 1.8 or higher.
 - Download source code and import to Eclipse.
 - Download and import 3rd party libraries, and add to build path.
+- Run Project > Clean
 
 Warning:
 ---
@@ -34,6 +35,9 @@ Usage:
 - 请确保当前环境为JDK1.8或更高
 - 下载源代码并导入Eclipse
 - 下载并导入第三方库，添加进Build Path
+- 运行 Project > Clean
+
+
 警告:
 ---
 > - 如果你正在读源代码的话，请做好面对翔一般的代码的心理准备。
