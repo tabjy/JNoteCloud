@@ -4,17 +4,17 @@ JNote Cloud is a simple note keeper software running on JavaFX platform, synchro
 
 Usage:
 ---
-- Make sure you have JDK 1.8 or higher.
+- JDK 1.8 or higher
 - Download source code and import to Eclipse.
 - Download and import 3rd party libraries, and add to build path.
 - Run Project > Clean
 
 Warning:
 ---
-> - If you are reading source code, except to see some crapy code.
-> - There is still many problem with it.
-> - Expect to see misspelling and gammar mistake.
-> - ~~It's a school project, what do you expect?~~
+> - Hard to understand code is expected.
+> - There is still many problems with it.
+> - Expect to see misspelling and grammar mistake.
+
 
 Dependencies and 3rd Libraries:
 --
@@ -28,30 +28,30 @@ Dependencies and 3rd Libraries:
 
 --------------
 
-JNote CloudÊÇÒ»¿îJavaFXÆ½Ì¨£¬Ö§³ÖMarkdownÓï·¨£¬Ê¹ÓÃMetroÉè¼ÆÓïÑÔµÄÔÚÏß±Ê¼ÇÈí¼ş¡£
+JNote Cloudæ˜¯ä¸€æ¬¾JavaFXå¹³å°ï¼Œæ”¯æŒMarkdownè¯­æ³•ï¼Œä½¿ç”¨Metroè®¾è®¡è¯­è¨€çš„åœ¨çº¿ç¬”è®°è½¯ä»¶ã€‚
 
 Usage:
 ---
-- ÇëÈ·±£µ±Ç°»·¾³ÎªJDK1.8»ò¸ü¸ß
-- ÏÂÔØÔ´´úÂë²¢µ¼ÈëEclipse
-- ÏÂÔØ²¢µ¼ÈëµÚÈı·½¿â£¬Ìí¼Ó½øBuild Path
-- ÔËĞĞ Project > Clean
+- è¯·ç¡®ä¿å½“å‰ç¯å¢ƒä¸ºJDK1.8æˆ–æ›´é«˜
+- ä¸‹è½½æºä»£ç å¹¶å¯¼å…¥Eclipse
+- ä¸‹è½½å¹¶å¯¼å…¥ç¬¬ä¸‰æ–¹åº“ï¼Œæ·»åŠ è¿›Build Path
+- è¿è¡Œ Project > Clean
 
 
-¾¯¸æ:
+è­¦å‘Š:
 ---
-> - Èç¹ûÄãÕıÔÚ¶ÁÔ´´úÂëµÄ»°£¬Çë×öºÃÃæ¶ÔÏèÒ»°ãµÄ´úÂëµÄĞÄÀí×¼±¸¡£
-> - ÎÊÌâÆäÊµ»¹Í¦¶àµÄ¡£
-> - Äã»áÎŞÔ¤Õ×µÄ¿´µ½ºÜ¶àÆ´Ğ´ºÍÓï·¨´íÎó
-> - ~~Ö»ÊÇÑ§Ğ£µÄÆÚÄ©×÷Òµ¶øÒÑ£¬±ğ±§Ì«´óÏ£Íû¡£~~
+> - å¦‚æœä½ æ­£åœ¨è¯»æºä»£ç çš„è¯ï¼Œè¯·åšå¥½é¢å¯¹ç¿”ä¸€èˆ¬çš„ä»£ç çš„å¿ƒç†å‡†å¤‡ã€‚
+> - é—®é¢˜å…¶å®è¿˜æŒºå¤šçš„ã€‚
+> - ä½ ä¼šæ— é¢„å…†çš„çœ‹åˆ°å¾ˆå¤šæ‹¼å†™å’Œè¯­æ³•é”™è¯¯
+> - ~~åªæ˜¯å­¦æ ¡çš„æœŸæœ«ä½œä¸šè€Œå·²ï¼Œåˆ«æŠ±å¤ªå¤§å¸Œæœ›ã€‚~~
 
 
 Dependencies and 3rd Libraries:
 --
 -**markdown4j** [https://code.google.com/p/markdown4j/](https://code.google.com/p/markdown4j/)
--  ¿ªÔ´Markdown×ªHTML Java¿â
+-  å¼€æºMarkdownè½¬HTML Javaåº“
 -  lisence: New BSD License	[http://opensource.org/licenses/BSD-3-Clause](http://opensource.org/licenses/BSD-3-Clause)
 
 -**JSON-java** [https://github.com/douglascrockford/JSON-java](https://github.com/douglascrockford/JSON-java) 
-- JSON±àÂë/½âÂë¿â
+- JSONç¼–ç /è§£ç åº“
 - lisence: The JSON License	 [http://www.json.org/license.html](http://www.json.org/license.html) 
